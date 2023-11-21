@@ -1,0 +1,64 @@
+﻿@using System.Globalization
+@model IEnumerable<SoftwareShopping.Web.ViewModels.ProductViewModel>
+
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div class="container text-center">
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-primary" asp-controller="Product" asp-action="Add">Adicionar</a>
+    </div>
+    <div class="row mt-4">
+        <table class="table border">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Image URL</th>
+                <th>Editar/Deletar</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ProductId
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>
+                        @item.Category
+                    </td>
+                    <td>
+                        @((item.Price).ToString("C", new CultureInfo("pt-BR")))
+                    </td>
+                    <td>
+                        @item.ImageUrl
+                    </td>
+                    <td>
+                        <a asp-controller="Product" asp-action="Edit" asp-route-id="@item.ProductId">
+                            <button class="btn btn-warning text-white">
+                                Editar
+                            </button>
+                        </a>
+                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ProductId">
+                            <button class="btn btn-danger">
+                                Deletar
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

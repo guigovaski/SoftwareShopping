@@ -1,0 +1,67 @@
+@model SoftwareShopping.Web.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <form method="post" asp-action="Edit">
+        <input asp-for="ProductId" hidden/>
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Price"></label>
+            </div>
+            <div class="col-10">
+                <input asp-for="Price" class="form-control"/>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Category"></label>
+            </div>
+            <div class="col-10">
+                <input asp-for="Category" class="form-control"/>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Description"></label>
+            </div>
+            <div class="col-10">
+                <input asp-for="Description" class="form-control"/>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="Name"></label>
+            </div>
+            <div class="col-10">
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-2">
+                <label asp-for="ImageUrl"></label>
+            </div>
+            <div class="col-10">
+                <input asp-for="ImageUrl" class="form-control"/>
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+        </div>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-danger mt-4 col-2">Cancelar</a>
+        <input class="btn btn-success col-2 mt-4" type="submit" value="Salvar"/>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

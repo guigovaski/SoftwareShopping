@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{94FF789D-48D7-458E-866A-55DF6696D20A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2FED0D62-B6F6-4FA5-846C-C7A330003667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareShopping.Web", "SoftwareShopping.Web\SoftwareShopping.Web.csproj", "{F6E892CA-E05D-4255-9AB4-43572D74C183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareShopping.ProductsAPI", "SoftwareShopping.ProductsAPI\SoftwareShopping.ProductsAPI.csproj", "{A5DB39A8-B3B7-4F77-969E-083B3CCA916C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{CC0BD6C2-F9FC-405D-A99A-11BCD1052290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6E892CA-E05D-4255-9AB4-43572D74C183} = {94FF789D-48D7-458E-866A-55DF6696D20A}
+		{A5DB39A8-B3B7-4F77-969E-083B3CCA916C} = {2FED0D62-B6F6-4FA5-846C-C7A330003667}
+		{CC0BD6C2-F9FC-405D-A99A-11BCD1052290} = {2FED0D62-B6F6-4FA5-846C-C7A330003667}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6E892CA-E05D-4255-9AB4-43572D74C183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E892CA-E05D-4255-9AB4-43572D74C183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E892CA-E05D-4255-9AB4-43572D74C183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E892CA-E05D-4255-9AB4-43572D74C183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DB39A8-B3B7-4F77-969E-083B3CCA916C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DB39A8-B3B7-4F77-969E-083B3CCA916C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DB39A8-B3B7-4F77-969E-083B3CCA916C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DB39A8-B3B7-4F77-969E-083B3CCA916C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0BD6C2-F9FC-405D-A99A-11BCD1052290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0BD6C2-F9FC-405D-A99A-11BCD1052290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0BD6C2-F9FC-405D-A99A-11BCD1052290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0BD6C2-F9FC-405D-A99A-11BCD1052290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
